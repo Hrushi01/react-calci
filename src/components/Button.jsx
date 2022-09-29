@@ -20,6 +20,7 @@ function Button({ value }) {
         numberValue='0'
       }else{
         numberValue=Number(calc.num + numberString)
+        console.log(numberValue,"number")
       }
       setcalc({
         ...calc,
@@ -30,6 +31,8 @@ function Button({ value }) {
 
     //decimal clicked
     const decimalClick=()=>{
+      console.log(calc.num,"decimal")
+
       setcalc({
         ...calc,
         num:'.'
@@ -44,16 +47,20 @@ function Button({ value }) {
 
     //sign clicked
     const signClick=()=>{
+      
       setcalc({
         sign:value,
         res:!calc.res && calc.num ? calc.num : calc.res,
-        num:0
-
+        num:0,
+        
       })
+      console.log(calc.sign,"sign")
     }
     //equal clicked
     const equalClick=()=>{
       if(calc.num && calc.res){
+      console.log("hrlo")
+
 
         const math=(a,b,sign)=>{
           const result={

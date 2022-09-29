@@ -20,3 +20,9 @@ background-image: linear-gradient(90deg, #06f6fa 0%, #05e47f 100%);
   padding: 0px;
   box-sizing: border-box;
 }
+.equal{
+  grid-column: 3/5;
+}
+.ac{
+  grid-column: 1/3;
+}
