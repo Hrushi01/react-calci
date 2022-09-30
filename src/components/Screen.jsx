@@ -24,6 +24,7 @@ function Screen() {
      {/* {calc.res?calc.res:( calc.sign &&calc.num ?(calc.sign):(calc.num?calc.num:(calc.sign?calc.sign: calc.res))) } */}
     {/* {calc.sign &&calc.res ?(calc.sign,calc.res):(calc.res?calc.res:calc.num) } */}
     {/* {calc.num?(calc.sign?calc.sign:calc.num):calc.res}{} */}
+    {/* <span className="bg-">({calc.res})</span> */}
     </Textfit>;
 }
 

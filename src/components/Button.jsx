@@ -56,6 +56,7 @@ function Button({ value }) {
       })
       console.log(calc.sign,"sign")
     }
+   
     //equal clicked
     const equalClick=()=>{
       if(calc.num && calc.res){
@@ -84,6 +85,51 @@ function Button({ value }) {
 
     }
 
+    // del clickde
+    const delClicked=()=>{
+      // if(!calc.num){
+      //   console.log("no num")
+      // }
+      console.log("g");
+      if(calc.num){
+        let result= calc.num.toString();
+        let a=result.slice(0,-1);
+        
+        const value=Number(a)
+          
+        
+        setcalc({
+          ...calc,
+          num:value
+
+        })
+        
+      }
+      else if(calc.sign){
+        setcalc({...calc,
+        sign:''})
+
+      }
+      else if(calc.res){
+        let result= calc.res.toString();
+        let a=result.slice(0,-1);
+        
+        const value=Number(a)
+        setcalc({
+          ...calc,
+          num:value,
+          res:0
+
+        })
+      }
+      console.log(value,"value");
+
+
+    }
+    
+
+    
+
     const handelClick=()=>{
       const results={
         '.':decimalClick,
@@ -93,7 +139,7 @@ function Button({ value }) {
         '-':signClick,
         '*':signClick,
         '=':equalClick,
-        'DEL':resetClick
+        'DEL':delClicked,
       }
       if(results[value]){
         return results[value]()

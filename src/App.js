@@ -6,7 +6,7 @@ import Button from "./components/Button";
 import CalcProvider from "./context/CalcContext";
 
 const btnVal = [
-  ["AC", "DEl", "/"],
+  ["AC", "DEL", "/"],
   [1, 2, 3, "*"],
   [4, 5, 6, "+"],
   [7, 8, 9, "-"],
