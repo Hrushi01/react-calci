@@ -78,6 +78,7 @@ function Button({ value }) {
                 sign:'',
                 num:0
               })
+              console.log(calc.res,'calc.res')
       }
 
 

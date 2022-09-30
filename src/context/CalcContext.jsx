@@ -8,6 +8,7 @@ function CalcProvider({children}) {
     num:0,
     res:0
    });
+   console.log(calc,"calc whoel")
 
    const providerVal={
     calc,setcalc
