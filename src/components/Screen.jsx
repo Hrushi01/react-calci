@@ -24,7 +24,8 @@ function Screen() {
      {/* {calc.res?calc.res:( calc.sign &&calc.num ?(calc.sign):(calc.num?calc.num:(calc.sign?calc.sign: calc.res))) } */}
     {/* {calc.sign &&calc.res ?(calc.sign,calc.res):(calc.res?calc.res:calc.num) } */}
     {/* {calc.num?(calc.sign?calc.sign:calc.num):calc.res}{} */}
-    {/* <span className="bg-">({calc.res})</span> */}
+    {/* <span >({calc.res&&calc.sign&&calc.num?(calc.res+calc.sign+calc.num):(calc.res&&calc.sign ? (calc.res+calc.sign):(calc.num && calc.sign?(calc.sign+calc.num):(calc.num?calc.num:calc.res)))} */}
+{/* </span> */}
     </Textfit>;
 }
 
